@@ -1,0 +1,18 @@
+1️. Difference between numerical and categorical data?
+Numerical data represents measurable quantities like age or score, while categorical data represents 
+labels or groups like gender or city.
+
+2️. What is a target variable?
+The target variable is the output that a machine learning model is trained to predict.
+
+3️. Why is data understanding important before modeling?
+Understanding data helps identify issues like missing values, imbalance, and feature types, ensuring 
+correct model selection and better results.
+
+4️. What is data imbalance?
+Data imbalance occurs when one class has significantly more samples than others, which can bias the 
+model’s predictions.
+
+5️. What does df.describe() show?
+df.describe() provides statistical summaries such as mean, minimum, maximum, and percentiles for 
+numerical features.
