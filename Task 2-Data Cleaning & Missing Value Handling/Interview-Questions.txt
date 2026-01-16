@@ -1,0 +1,16 @@
+1️. Mean vs Median Imputation?
+Mean imputation replaces missing values with the average and is sensitive to outliers, while median imputation uses the middle value and 
+is robust to outliers.
+
+2️. When should rows be dropped?
+Rows should be dropped when missing values are very few or when they do not contain important information for modeling.
+
+3️. Why is missing data harmful?
+Missing data can bias the model, reduce accuracy, and lead to incorrect conclusions if not handled properly.
+
+4️. What is data leakage?
+Data leakage occurs when information from outside the training data is used during model training, leading to unrealistically high 
+performance.
+
+5️. What is data quality?
+Data quality refers to how accurate, complete, consistent, and reliable the data is for analysis and modeling.
