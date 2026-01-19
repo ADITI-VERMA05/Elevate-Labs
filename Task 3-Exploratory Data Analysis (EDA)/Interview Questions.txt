@@ -1,0 +1,24 @@
+1. What is EDA?
+---------------
+EDA (Exploratory Data Analysis) is the process of understanding data using statistics and visualizations.
+It helps identify patterns, trends, and data quality issues before modeling.
+
+2. What is correlation?
+-----------------------
+Correlation measures the strength and direction of the relationship between two variables.
+It helps understand how changes in one feature affect another.
+
+3. Why detect outliers?
+-----------------------
+Outliers can distort statistical measures and negatively impact model performance.
+Detecting them improves data reliability and prediction accuracy.
+
+4. What is multicollinearity?
+-----------------------------
+Multicollinearity occurs when independent variables are highly correlated with each other.
+It can make model coefficients unstable and hard to interpret.
+
+5. Why is visualization important?
+----------------------------------
+Visualization makes complex data easy to understand at a glance.
+It reveals patterns, relationships, and anomalies that numbers alone may miss.

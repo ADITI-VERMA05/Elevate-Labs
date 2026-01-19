@@ -1,0 +1,59 @@
+VISUAL INSIGHTS REPORT – NETFLIX MOVIES AND TV SHOWS DATASET
+===========================================================
+
+1. DISTRIBUTION OF NUMERICAL FEATURES (HISTOGRAMS)
+-------------------------------------------------
+Histograms of numerical features such as release year and duration (converted to
+numeric form) show that most Netflix content has been released in recent years,
+especially after 2015. This indicates a rapid growth in content production on the
+platform in the last decade.
+
+2. CATEGORICAL FEATURE ANALYSIS (COUNT PLOTS)
+---------------------------------------------
+Count plots of categorical features reveal that Movies dominate the Netflix catalog
+compared to TV Shows. Ratings such as TV-MA and TV-14 appear most frequently, and a
+small number of countries contribute the majority of content, highlighting geographic
+concentration.
+
+3. OUTLIER DETECTION (BOX PLOTS)
+--------------------------------
+Box plots of duration show the presence of outliers, particularly very long movies and
+TV shows with a high number of seasons. These outliers represent special cases such as
+extended films or long-running series.
+
+4. CORRELATION ANALYSIS (HEATMAP)
+---------------------------------
+The correlation heatmap between numerical features such as release year and numeric
+duration shows a weak correlation. This indicates that the length of content is not
+strongly dependent on its release year.
+
+5. KEY INSIGHTS FROM VISUALIZATIONS
+----------------------------------
+- Netflix content production has increased significantly in recent years.
+- Movies are more common than TV Shows on the platform.
+- Content duration varies widely across titles.
+- Most numerical features show weak correlation with each other.
+
+6. IMPORTANT FEATURES FOR PREDICTION
+------------------------------------
+Depending on the prediction task, important features include:
+- Type (Movie or TV Show)
+- Release Year
+- Rating
+- Duration (numeric)
+- Country
+
+7. SUMMARY
+----------
+- The dataset contains mixed data types including numerical, categorical, and text
+  features.
+- Categorical features dominate the dataset.
+- The dataset is suitable for recommendation systems and trend analysis.
+- Categorical encoding and text preprocessing are required before machine learning
+  modeling.
+
+CONCLUSION
+----------
+The Netflix dataset provides valuable insights into content trends and user
+preferences. After appropriate preprocessing, it is well-suited for exploratory
+analysis, recommendation systems, and machine learning applications.
