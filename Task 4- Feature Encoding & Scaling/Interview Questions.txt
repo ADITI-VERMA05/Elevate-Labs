@@ -1,0 +1,24 @@
+1. Label Encoding vs One-Hot Encoding?
+--------------------------------------
+Label encoding assigns numeric labels to categories, while one-hot encoding creates separate binary columns.
+One-hot encoding avoids false ordinal relationships between categories.
+
+2. Why is scaling required?
+---------------------------
+Scaling ensures all features contribute equally to model training.
+It prevents features with larger values from dominating distance-based algorithms.
+
+3. What is normalization?
+-------------------------
+Normalization scales data to a fixed range, usually between 0 and 1.
+It improves model stability and convergence speed.
+
+4. Which algorithms need scaling?
+---------------------------------
+Distance-based and gradient-based algorithms like KNN, SVM, K-Means, and Linear Regression require scaling.
+Tree-based models generally do not require scaling.
+
+5. What is feature engineering?
+-------------------------------
+Feature engineering is the process of creating or transforming variables to improve model performance.
+It helps models learn patterns more effectively.ionships, and anomalies that numbers alone may miss.
