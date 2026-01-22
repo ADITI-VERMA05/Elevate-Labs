@@ -1,0 +1,61 @@
+**EVALUATION REPORT**
+---------------------
+Project: Heart Disease Prediction using Logistic Regression
+
+1. Objective
+------------
+The objective of this project is to build and evaluate a binary classification
+model to predict the presence of heart disease using a Logistic Regression
+algorithm.
+
+2. Dataset
+----------
+The dataset used is the Heart Disease dataset.
+- Target variable: target
+  - 1 → Presence of heart disease
+  - 0 → No heart disease
+
+3. Model Used
+-------------
+Algorithm: Logistic Regression
+Optimization Techniques:
+- Feature scaling using StandardScaler
+- Handling class imbalance using class_weight
+- Hyperparameter tuning using GridSearchCV
+- 5-fold cross-validation
+
+4. Evaluation Metrics
+---------------------
+The model was evaluated on the test dataset using the following metrics:
+
+- Accuracy: Measures overall correctness of the model
+- Precision: Measures correctness of positive predictions
+- Recall: Measures the model’s ability to identify actual positive cases
+
+Observed Results:
+- Accuracy: 0.77 (approx)
+- Precision: Improved after optimization
+- Recall: High, ensuring fewer missed disease cases
+
+5. Confusion Matrix Explanation
+-------------------------------
+The confusion matrix consists of:
+- True Positives (TP): Correctly predicted heart disease cases
+- True Negatives (TN): Correctly predicted non-disease cases
+- False Positives (FP): Incorrect disease predictions
+- False Negatives (FN): Missed disease cases
+
+In healthcare applications, minimizing False Negatives is critical,
+and the model achieves a strong recall score.
+
+6. Interpretation of Results
+-----------------------------
+The optimized Logistic Regression model provides a good balance between
+precision and recall. The model is effective in detecting heart disease
+patients while maintaining acceptable overall accuracy.
+
+7. Conclusion
+-------------
+The trained and optimized Logistic Regression model demonstrates reliable
+performance for heart disease prediction. The model is interpretable,
+efficient, and suitable for real-world deployment scenarios.

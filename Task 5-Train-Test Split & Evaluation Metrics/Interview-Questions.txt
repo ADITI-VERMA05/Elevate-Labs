@@ -1,0 +1,26 @@
+1. What is Overfitting?
+-----------------------
+Overfitting happens when a model learns the training data too well, including noise and unnecessary details.
+As a result, it performs very well on training data but poorly on new or unseen data.
+
+2. Accuracy vs Precision
+------------------------
+Accuracy tells us how many predictions were correct overall.
+Precision tells us how many of the predicted positives were actually correct.
+
+3. What is Recall?
+------------------
+Recall measures how many actual positives the model was able to identify correctly.
+
+4. What is a Confusion Matrix?
+------------------------------
+A confusion matrix is a table used to evaluate model performance.
+It shows:
+True Positives
+True Negatives
+False Positives
+False Negatives
+
+5. Why Do We Split Data?
+------------------------
+We split data into training and testing sets to check how well the model works on new, unseen data.
