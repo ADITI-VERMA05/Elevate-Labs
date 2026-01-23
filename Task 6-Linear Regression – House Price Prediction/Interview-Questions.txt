@@ -1,0 +1,27 @@
+**Interview Questions**
+-----------------------
+-----------------------
+1. What is the use of Linear Regression?
+----------------------------------------
+Linear Regression is used to predict a continuous numerical value by finding the relationship between input features and an output variable.
+It helps understand how changes in inputs affect the output.
+
+2. What is RMSE and why is it important?
+----------------------------------------
+RMSE (Root Mean Square Error) measures the average magnitude of prediction errors.
+It is important because it penalizes large errors and shows how close predictions are to actual values.
+
+3. Why do we split train and test data?
+---------------------------------------
+Training data is used to learn the model, while test data is used to evaluate its performance on unseen data.
+This helps check generalization and avoid overfitting.
+
+4. What does a coefficient represent?
+-------------------------------------
+A coefficient shows how much the target variable changes when a feature increases by one unit.
+It also indicates the direction (positive or negative) of the relationship.
+
+5. What is underfitting?
+------------------------
+Underfitting occurs when a model is too simple to capture the data pattern.
+It performs poorly on both training and test data.

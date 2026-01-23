@@ -1,0 +1,30 @@
+MODEL EVALUATION REPORT
+-----------------------
+
+Model Used:
+Optimized Linear Regression (with preprocessing and regularization)
+
+Dataset:
+California Housing Dataset
+
+Evaluation Metrics:
+-------------------
+
+1. Mean Absolute Error (MAE):
+   MAE = 50702.17
+
+   Interpretation:
+   On average, the model’s predictions differ from the actual house prices by approximately 50,702 units.
+
+2. Root Mean Square Error (RMSE):
+   RMSE = 70031.49
+
+   Interpretation:
+   RMSE penalizes larger errors more than MAE. The value indicates that large prediction errors exist but are 
+   within an acceptable range for housing price prediction.
+
+Overall Conclusion:
+-------------------
+The optimized linear regression model shows reasonable predictive performance. RMSE being higher than MAE indicates 
+the presence of some outliers, which is expected in real-world housing datasets. The model generalizes well and is 
+suitable as a baseline regression model.
