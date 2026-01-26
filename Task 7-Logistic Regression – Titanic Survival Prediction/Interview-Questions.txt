@@ -1,0 +1,38 @@
+1. Why Logistic Regression is used for classification?
+------------------------------------------------------
+Logistic Regression is used for classification because it predicts the probability of a class using a sigmoid function 
+and then maps it to discrete classes (0 or 1).
+It works well for binary classification, is easy to interpret, and performs efficiently on linearly separable data.
+
+2. What is precision and recall?
+--------------------------------
+Precision tells us how many predicted positives are actually correct.
+ie. “Out of all predicted positive cases, how many were truly positive?”
+Recall tells us how many actual positives were correctly predicted.
+ie. “Out of all actual positive cases, how many did we find?”
+Precision focuses on false positives, while recall focuses on false negatives.
+
+3. What is ROC curve?
+---------------------
+The ROC (Receiver Operating Characteristic) curve is a graph that shows the trade-off between:
+>> True Positive Rate (Recall)
+>> False Positive Rate
+It helps evaluate how well a classification model separates classes at different thresholds.
+
+4. What does AUC mean?
+----------------------
+AUC (Area Under the ROC Curve) measures the overall performance of the model.
+>> AUC = 1 → Perfect classifier
+>> AUC = 0.5 → Random guessing
+Higher AUC means the model is better at distinguishing between classes.
+
+5. What is confusion matrix?
+----------------------------
+A confusion matrix is a table that summarizes model predictions by comparing:
+Actual values vs Predicted values
+It contains:
+>> True Positives (TP)
+>> True Negatives (TN)
+>> False Positives (FP)
+>> False Negatives (FN)
+It helps calculate accuracy, precision, recall, and F1-score.
