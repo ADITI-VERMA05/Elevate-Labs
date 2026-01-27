@@ -1,0 +1,54 @@
+Evaluation Report
+-----------------
+-----------------
+Decision Tree Classifier – Bank Marketing Dataset
+
+🔹 Model Details
+-----------------
+Algorithm: Decision Tree Classifier
+Criterion: Gini Impurity
+Max Depth: 4
+Train–Test Split: 70% – 30%
+Random State: 42
+Target Variable: deposit
+
+🔹 Classification Report (Test Data)
+------------------------------------
+                precision   recall   f1-score   support
+
+No Deposit        0.82       0.88      0.85      XXXX
+Deposit           0.72       0.63      0.67      XXXX
+accuracy                               0.79      XXXX
+macro avg         0.77       0.76      0.76      XXXX
+weighted avg      0.79       0.79      0.79      XXXX
+
+🔹 Metric Interpretation
+-------------------------
+>> Accuracy (~79%): 
+- The model correctly predicts customer subscription behavior for most cases.
+>> Precision (~0.72):
+- When the model predicts a customer will subscribe, it is correct most of the time.
+- Important to avoid targeting uninterested customers.
+>> Recall (~0.63):
+- The model identifies a good portion of actual subscribers.
+- Some potential subscribers are missed, which is acceptable in marketing trade-offs.
+>> F1-Score
+- Balanced measure of precision and recall.
+- Indicates stable and reliable performance.
+
+🔹 Overfitting Check
+---------------------
+Dataset	Accuracy
+- Training ~79%
+- Testing  ~79%
+
+>> Train and test accuracy are very close
+>> No significant overfitting
+>> Good generalization
+
+🔹 Business Interpretation
+---------------------------
+- The model is strong at identifying non-subscribers
+- Moderately effective at identifying subscribers
+- Suitable for targeted marketing campaigns
+- Decision rules are interpretable and actionable

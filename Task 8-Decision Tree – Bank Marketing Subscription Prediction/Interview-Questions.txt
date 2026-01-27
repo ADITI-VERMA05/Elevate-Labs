@@ -1,0 +1,33 @@
+Interview Questions
+-------------------
+-------------------
+
+Why do Decision Trees overfit?
+------------------------------
+Decision Trees overfit because they keep splitting until they perfectly fit training data, capturing noise 
+instead of patterns.
+
+What is max_depth?
+------------------
+max_depth limits how deep the tree can grow.
+✔ Smaller depth → less overfitting
+✔ Larger depth → more complex model
+
+What is Gini Impurity?
+----------------------
+Gini Impurity measures how mixed the classes are in a node.
+Gini = 0 → pure node
+Lower Gini → better split
+
+What is pruning?
+------------------
+Pruning removes unnecessary branches from a decision tree to:
+
+Reduce overfitting
+Improve generalization
+Make the tree simpler
+
+What is a decision boundary?
+---------------------------
+A decision boundary is the rule-based region where the model decides between classes.
+In Decision Trees, boundaries are axis-aligned splits (if-else rules).
