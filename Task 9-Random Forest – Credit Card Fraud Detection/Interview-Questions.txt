@@ -1,0 +1,33 @@
+Interview Questions
+-------------------
+-------------------
+1. Why is accuracy misleading in fraud detection?
+-------------------------------------------------
+In fraud detection, the dataset is highly imbalanced (e.g., 99.8% normal transactions, 0.2% fraud).
+A model predicting “not fraud” for everything can achieve very high accuracy but fail to detect frauds.
+Hence, metrics like precision, recall, F1-score, ROC-AUC are more meaningful than accuracy.
+
+2. What is Random Forest?
+-------------------------
+Random Forest is an ensemble machine learning algorithm that builds multiple decision trees and combines their 
+predictions using majority voting (classification) or averaging (regression).
+It reduces overfitting, improves generalization, and handles non-linear patterns well—making it ideal for fraud detection.
+
+3. What is ensemble learning?
+-----------------------------
+Ensemble learning is a technique where multiple models are combined to produce a stronger and more robust model.
+Instead of relying on a single weak learner, ensembles reduce variance, bias, or both.
+Examples include Bagging (Random Forest), Boosting (XGBoost), and Stacking.
+
+4. What is n_estimators in Random Forest?
+-----------------------------------------
+n_estimators defines the number of decision trees in the Random Forest.
+- Higher values → better performance & stability
+- Too high → increased training time
+    Typical values range from 100 to 500, depending on dataset size and complexity.
+
+5. What is SMOTE?
+-----------------
+SMOTE (Synthetic Minority Over-sampling Technique) is a method to handle class imbalance by generating synthetic 
+samples of the minority class instead of duplicating existing ones.
+In fraud detection, SMOTE helps the model learn fraud patterns better and improves recall for fraudulent transactions.
