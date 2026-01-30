@@ -1,0 +1,43 @@
+Interview Questions
+-------------------
+-------------------
+1. What is K in KNN?
+--------------------
+K is the number of nearest neighbors considered to classify a new data point.
+In handwritten digit classification:
+- If K = 3, the model looks at the 3 closest digit images
+- The digit with majority votes becomes the predicted label
+
+2. Why is scaling required for KNN?
+-----------------------------------
+KNN uses distance-based calculations, so features with larger values dominate.
+In digit images:
+- Pixel values range from 0 to 255
+- If not scaled, brighter pixels unfairly influence distance
+✔ Scaling ensures:
+- All pixels contribute equally
+- Distance calculations are meaningful
+Common scaling:
+- StandardScaler
+- MinMaxScaler
+
+3. What is Euclidean distance?
+------------------------------
+It measures the straight-line distance between two points in feature space.
+In digit classification:
+- Each image is a point in high-dimensional space (e.g., 784 pixels)
+- Euclidean distance compares visual similarity between digits
+
+4. What happens if K is too low?
+--------------------------------
+If K is very small (e.g., K = 1):
+- Model becomes very sensitive to noise
+- High variance → overfitting
+
+5. What are the limitations of KNN?
+-----------------------------------
+- Slow prediction – computes distance with all training samples
+- High memory usage – stores entire dataset
+- Sensitive to noise & outliers
+- Performance degrades in high dimensions (curse of dimensionality)
+- Needs feature scaling
