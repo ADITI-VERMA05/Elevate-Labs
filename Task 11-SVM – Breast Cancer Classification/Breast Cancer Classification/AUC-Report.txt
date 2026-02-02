@@ -1,0 +1,27 @@
+AUC (Area Under Curve) Report
+-----------------------------
+-----------------------------
+Model: Tuned SVM (RBF Kernel)
+Dataset: Breast Cancer Wisconsin (Diagnostic)
+
+Evaluation Metric
+-----------------
+ROC–AUC Score: ~0.98 – 0.99
+
+Interpretation
+--------------
+- The AUC score close to 1.0 indicates excellent class separability between malignant and benign cases.
+- This means the model has a very high probability of ranking a randomly chosen malignant sample higher 
+    than a benign one.
+
+Why AUC is Important Here
+-------------------------
+- Threshold-independent metric
+- Robust to class imbalance
+- More reliable than accuracy for medical diagnosis
+- Emphasizes true positive rate vs false positive rate
+
+Conclusion
+----------
+The tuned RBF SVM demonstrates strong discriminative power, making it well-suited for breast cancer 
+classification with minimal false negatives.

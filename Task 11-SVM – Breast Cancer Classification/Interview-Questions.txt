@@ -1,0 +1,41 @@
+Interview Questions
+-------------------
+-------------------
+1. What is margin in SVM?
+----------------------
+Margin is the distance between the decision boundary (hyperplane) and the closest 
+data points from each class.
+- These closest points are called support vectors.
+- SVM’s main goal is to maximize the margin.
+
+2. Difference between Linear Kernel and RBF Kernel?
+--------------------------------------------------
+Linear kernel works for linearly separable data, while RBF kernel handles non-linear 
+relationships by mapping data to higher dimensions.
+
+3. What is C parameter?
+-----------------------
+C is the regularization parameter that controls the trade-off between:
+Maximizing margin
+Minimizing classification error
+Effects:
+- Small C → Larger margin, allows misclassification (more bias)
+- Large C → Smaller margin, strict classification (more variance)
+
+4. What is gamma?
+-----------------
+Gamma defines how far the influence of a single training point reaches.
+Effects:
+- Low gamma → Far influence → smoother decision boundary
+- High gamma → Near influence → complex boundary (overfitting risk)
+
+5. Why scaling required for SVM?
+--------------------------------
+SVM relies on distance calculations.
+If features are on different scales:
+- Large-scale features dominate
+- Model becomes biased
+Benefits of scaling:
+- Faster convergence
+- Better margin calculation
+- Prevents dominance of one feature
