@@ -1,0 +1,44 @@
+Interview Questions
+-------------------
+-------------------
+1. What is clustering?
+----------------------
+Clustering is an unsupervised machine learning technique used to group similar data points 
+together without predefined labels.
+- Objects in the same cluster are more similar to each other than to those in other clusters
+- Used when we don’t know target classes in advance
+
+2. Why scaling matters in KMeans?
+---------------------------------
+KMeans uses distance-based calculations (Euclidean distance) to form clusters.
+If features are on different scales:
+- Features with larger values dominate
+- Clusters become biased and incorrect
+
+3. What is inertia?
+-------------------
+Inertia is the sum of squared distances of each data point from its nearest cluster centroid.
+- Measures how compact the clusters are.
+- Lower inertia → tighter clusters.
+Mathematically:
+-> Inertia = Σ (distance of point to centroid)²
+
+4. What is the Elbow Method?
+----------------------------
+The Elbow Method helps determine the optimal number of clusters (K).
+Steps:
+1. Run KMeans for multiple values of K
+2. Compute inertia for each K
+3. Plot K vs Inertia
+4. Look for the “elbow point” where the decrease slows
+
+5. What are the limitations of KMeans?
+--------------------------------------
+KMeans is fast and simple, but has important drawbacks:
+>> Limitations:
+- Need to specify K in advance
+- Sensitive to initial centroid placement
+- Sensitive to outliers
+- Assumes spherical clusters
+- Performs poorly with non-linear or overlapping clusters
+- Works best with numerical data only
