@@ -1,0 +1,65 @@
+Interview Questions
+-------------------
+-------------------
+1. What problem does PCA solve?
+-------------------------------
+Principal Component Analysis (PCA) solves the problem of high dimensionality in datasets.
+When a dataset has many correlated features:
+- Models become slower
+- Risk of overfitting increases
+- Visualization becomes difficult
+- Redundant information exists
+PCA:
+- Reduces dimensions while retaining maximum information
+- Converts correlated features into uncorrelated principal components
+- Keeps the directions of maximum variance
+
+2. What is explained variance?
+------------------------------
+Explained variance tells us how much information (variance) each principal 
+component captures from the original data.
+Each principal component has an explained variance ratio
+- It indicates the percentage of total variance retained
+Example:
+- PC1 → 60% variance
+- PC2 → 25% variance
+- PC3 → 10%
+Cumulative explained variance:
+- PC1 + PC2 = 85% information retained
+
+3. Why is scaling required for PCA?
+-----------------------------------
+PCA is distance and variance-based.
+If features are on different scales:
+- High-magnitude features dominate
+- PCA becomes biased toward those features
+Example:
+- Income (₹ in thousands)
+- Age (years)
+Without scaling:
+- Income dominates principal components
+With scaling (StandardScaler):
+- All features contribute equally
+
+4. PCA vs feature selection?
+----------------------------
+| Aspect               | PCA                           | Feature Selection      |
+| -------------------- | ----------------------------- | ---------------------- |
+| Type                 | Feature **extraction**        | Feature **selection**  |
+| Output               | New components                | Original features      |
+| Interpretability     | Low                           | High                   |
+| Correlation handling | Yes                           | Depends on method      |
+| Use case             | Compression & noise reduction | Model interpretability |
+
+5. What are PCA limitations?
+----------------------------
+1. Loss of interpretability
+- Principal components don’t have physical meaning
+2. Linear method only
+- Cannot capture non-linear relationships
+3. Sensitive to scaling
+- Requires proper normalization
+4. Information loss
+- Some variance is always discarded
+5. Not ideal for supervised tasks
+- Does not consider target variable
