@@ -1,0 +1,71 @@
+Interview Questions
+-------------------
+-------------------
+1. Why compare multiple models?
+---------------------------
+Because no single model is best for all datasets.
+Different models make different assumptions about data
+Some capture linear patterns, others capture complex non-linear patterns
+Helps identify:
+- Best bias–variance trade-off
+- Best generalization on unseen data
+- Prevents blindly trusting one algorithm
+
+2️. What is overfitting detection method?
+----------------------------------------
+Overfitting occurs when a model performs very well on training data but poorly on test data.
+Common detection methods:
+- Train vs Test performance gap
+    High training accuracy + low test accuracy → overfitting
+- Cross-validation
+    Large variance across folds indicates instability
+- Learning curves
+    Training score high, validation score low
+- Regularization impact
+    Performance improves when regularization is added
+
+3️. Which metrics matter in imbalanced problems?
+-----------------------------------------------
+Accuracy is misleading in imbalanced datasets.
+Important metrics:
+- Precision – correctness of positive predictions
+- Recall – ability to catch actual positives
+- F1-Score – balance between precision & recall
+- ROC-AUC – overall class separation ability
+- PR-AUC – better when positive class is rare
+
+4️. How do you choose the best model?
+------------------------------------
+The “best” model is not just the most accurate one.
+
+Selection criteria:
+- Validation performance (cross-validated)
+- Relevant business metric
+- Generalization ability
+- Model complexity
+- Interpretability
+- Training & inference cost
+
+Practical approach:
+- Compare multiple models
+- Evaluate using proper metrics
+- Check overfitting
+- Prefer simpler model if performance is similar
+
+5️. What is model generalization?
+--------------------------------
+Model generalization is the ability of a model to perform well on unseen, real-world data.
+
+A generalized model:
+- Learns patterns, not noise
+- Maintains consistent performance across datasets
+
+Poor generalization:
+- Overfitting or underfitting
+
+Improved by:
+- More representative data
+- Regularization
+- Cross-validation
+- Feature selection
+- Avoiding overly complex models
