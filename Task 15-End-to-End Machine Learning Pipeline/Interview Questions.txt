@@ -1,0 +1,65 @@
+Interview Questions
+-------------------
+-------------------
+1. What is an ML Pipeline?
+--------------------------
+An ML Pipeline is a structured sequence of steps that automates the machine learning workflow — from data preprocessing 
+to model training and prediction.
+It combines:
+- Data preprocessing (scaling, encoding, imputation)
+- Feature engineering
+- Model training
+- Evaluation
+    into a single reusable object.
+
+2️. Why do pipelines reduce data leakage?
+----------------------------------------
+> What is Data Leakage?
+Data leakage happens when information from the test set accidentally influences training.
+The pipeline:
+- Fits scaler only on training data
+- Applies same transformation to test data using .transform()
+So:
+- No future/test information leaks into training
+- Safe cross-validation
+
+3️. What is ColumnTransformer?
+-----------------------------
+ColumnTransformer allows you to apply different preprocessing to different columns.
+This:
+- Applies scaling only to numeric columns
+- Applies encoding only to categorical columns
+- Combines everything into one feature matrix
+
+4️. Why do pipelines help in deployment?
+---------------------------------------
+Pipelines are deployment-friendly because:
+
+1. Everything is inside one object
+Instead of saving:
+- scaler.pkl
+- encoder.pkl
+- model.pkl
+2. Same preprocessing in production
+When user sends new data:
+It automatically:
+- Scales
+- Encodes
+- Applies model
+No mismatch.
+3. Cleaner integration in APIs
+Very useful in:
+- Flask
+- FastAPI
+- Streamlit
+- AWS / GCP deployment
+
+5️. Pipeline vs Manual Preprocessing?
+------------------------------------
+| Aspect            | Manual Preprocessing | Pipeline   |
+| ----------------- | -------------------- | ---------- |
+| Code Structure    | Scattered            | Structured |
+| Data Leakage Risk | High                 | Low        |
+| Cross Validation  | Difficult            | Easy       |
+| Deployment        | Complicated          | Simple     |
+| Maintainability   | Hard                 | Clean      |
