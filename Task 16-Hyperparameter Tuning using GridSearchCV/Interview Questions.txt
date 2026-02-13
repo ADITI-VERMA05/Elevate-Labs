@@ -1,0 +1,63 @@
+Interview Questions
+-------------------
+-------------------
+1. What are Hyperparameters?
+----------------------------
+Hyperparameters are configuration settings that are set before training a machine learning model.
+They are not learned from data — instead, they control how the model learns.
+
+2️. Why is GridSearchCV Used?
+----------------------------
+GridSearchCV from scikit-learn is used to:
+- Find the best combination of hyperparameters
+- Avoid manual trial-and-error
+- Use cross-validation for reliable evaluation
+How it works:
+- Define a parameter grid
+- Train model for every possible combination
+- Perform cross-validation
+- Select best-performing combination
+
+3️. What is Cross-Validation?
+----------------------------
+Cross-validation (CV) is a technique to evaluate model performance more reliably.
+Most common: K-Fold Cross Validation
+🔹 K-Fold Process:
+- Split data into K equal parts (e.g., 5)
+- Train on K-1 folds
+- Test on remaining fold
+- Repeat K times
+- Take average score
+Why use it?
+- Reduces overfitting
+- Uses full dataset efficiently
+- Gives stable performance estimate
+GridSearchCV uses cross-validation internally.
+
+4️. Why is Tuning on Test Data Wrong?
+------------------------------------
+Test data must be kept completely unseen.
+If you tune hyperparameters using test data:
+- Model indirectly “learns” from test set
+- You get biased performance
+- Real-world performance will drop
+- It causes data leakage
+Test data should simulate real-world unseen data.
+
+5️. GridSearch vs RandomSearch?
+------------------------------
+Both are hyperparameter tuning techniques in scikit-learn.
+
+| Feature     | GridSearchCV          | RandomizedSearchCV    |
+| ----------- | --------------------- | --------------------- |
+| Search Type | Exhaustive            | Random sampling       |
+| Speed       | Slower                | Faster                |
+| Best for    | Small parameter space | Large parameter space |
+| Accuracy    | May find optimal      | May find near-optimal |
+
+GridSearch:
+- Tries all combinations
+- More computationally expensive
+RandomSearch:
+- Tries random combinations
+- Efficient for large models
